@@ -1,0 +1,27 @@
+﻿<Window x:Class="SistemaFinanceiro.TelaConsultaDespesa"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Cadastro de Despesas" Height="368" Width="556">
+    <Window.Background>
+        <ImageBrush ImageSource="/SistemaFinanceiro;component/Imagens/background2.jpg" />
+    </Window.Background>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="81*"/>
+            <ColumnDefinition Width="193*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Cadastro de Despesas" Height="28" HorizontalAlignment="Left" Margin="51,24,0,0" Name="lbCadastroCliente" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="1" />
+        <Label Content="Data da pagamento :" Height="28" HorizontalAlignment="Left" Margin="46,135,0,0" x:Name="lbData" VerticalAlignment="Top" Grid.ColumnSpan="2" />
+        <Label Content="Valor :" Height="28" HorizontalAlignment="Left" Margin="167,134,0,0" x:Name="lbValor" VerticalAlignment="Top" Grid.Column="1" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="13,134,0,0" x:Name="tbData" VerticalAlignment="Top" Width="149" Grid.Column="1" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="216,135,0,0" x:Name="tbValor" VerticalAlignment="Top" Width="124" Grid.Column="1" />
+        <Label Content="Descrição do pagamento :" Height="28" HorizontalAlignment="Left" Margin="120,191,0,0" x:Name="lbDescricao" VerticalAlignment="Top" Grid.ColumnSpan="2" />
+        <TextBox Height="65" HorizontalAlignment="Left" Margin="111,191,0,0" x:Name="tbDescricao" VerticalAlignment="Top" Width="229" Grid.Column="1" />
+        <Button x:Name="btAlterar" Content="Alterar" Grid.Column="1" HorizontalAlignment="Left" Margin="10,290,0,0" VerticalAlignment="Top" Width="75" Click="btAlterar_Click" />
+        <Button x:Name="btExcluir" Content="Excluir" Grid.Column="1" HorizontalAlignment="Left" Margin="148,290,0,0" VerticalAlignment="Top" Width="75" Click="btExcluir_Click" />
+        <Label Content="Data da pagamento :" Height="28" HorizontalAlignment="Left" Margin="46,71,0,0" x:Name="lbDataConsulta" VerticalAlignment="Top" Grid.ColumnSpan="2" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="13,70,0,0" x:Name="tbDataConsulta" VerticalAlignment="Top" Width="149" Grid.Column="1" />
+        <Button x:Name="btConsultar" Content="Consultar" Grid.Column="1" HorizontalAlignment="Left" Margin="234,70,0,0" VerticalAlignment="Top" Width="75" Click="btConsultar_Click"/>
+
+    </Grid>
+</Window>
