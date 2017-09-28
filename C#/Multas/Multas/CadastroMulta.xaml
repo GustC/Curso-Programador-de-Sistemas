@@ -1,0 +1,28 @@
+﻿<Window x:Class="Multas.CadastroMulta"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Cadastro de Multas"  Height="368" Width="556">
+    <Window.Background>
+        <ImageBrush ImageSource="/Multas;component/Imagens/background2.jpg" />
+    </Window.Background>
+    <Grid>
+        <Label Content="Cadastro de multas" Height="28" HorizontalAlignment="Left" Margin="211,24,0,0" Name="lbCadastroCliente" VerticalAlignment="Top" FontWeight="Bold" />
+        <Label Content="Codigo da multa :" Height="28" HorizontalAlignment="Left" Margin="40,106,0,0" Name="lbCodigo" VerticalAlignment="Top" />
+        <Label Content="Cpf :" Height="28" HorizontalAlignment="Left" Margin="319,151,0,0" Name="lbCpf" VerticalAlignment="Top" />
+        <Label Content="Valor :" Height="28" HorizontalAlignment="Left" Margin="40,0,0,150" Name="lbValor" VerticalAlignment="Bottom" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="150,106,0,0" Name="tbCodigo" VerticalAlignment="Top" Width="133" />
+        <Label Content="Placa :" Height="28" HorizontalAlignment="Left" Margin="161,153,0,0" Name="lbPlaca" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="360,152,0,0" Name="tbCpf" VerticalAlignment="Top" Width="110" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="90,153,0,0" Name="tbValor" VerticalAlignment="Top" Width="57" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="210,153,0,0" Name="tbPlaca" VerticalAlignment="Top" Width="101" />
+        <Button Content="Cadastrar" Height="23" HorizontalAlignment="Left" Margin="224,284,0,0" Name="btCadastrar" VerticalAlignment="Top" Width="75" Click="btCadastrar_Click" />
+        <Label Content="Placa do veiculo :" Height="28" HorizontalAlignment="Left" Margin="40,63,0,0" Name="lbPlacaConsulta" VerticalAlignment="Top" Foreground="#FFF51C1C" FontWeight="Bold" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="161,64,0,0" Name="tbPlacaConsulta" VerticalAlignment="Top" Width="158" />
+        <Label Content="Obs : Cadastro de veiculos so pode ser afetuado com uma Placa valida." Height="28" HorizontalAlignment="Left" Margin="85,251,0,0" Name="lbAviso" VerticalAlignment="Top" Foreground="#FFEF2525" />
+        <Button Content="Verificar" Height="23" HorizontalAlignment="Left" Margin="360,64,0,0" Name="btVerificar" VerticalAlignment="Top" Width="75" Click="btVerificar_Click" />
+        <Label Content="Descrição da multa :" Height="28" HorizontalAlignment="Left" Margin="40,199,0,0" Name="lbdescricao" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Right" Margin="0,199,64,0" Name="tbDescricao" VerticalAlignment="Top" Width="309" />
+        <Label Content="Pontos da Carteira :" Height="28" HorizontalAlignment="Left" Margin="291,106,0,0" Name="lbPontos" VerticalAlignment="Top" />
+        <TextBox Height="23" Margin="410,106,64,0" Name="tbPontos" VerticalAlignment="Top" />
+    </Grid>
+</Window>

@@ -1,0 +1,32 @@
+﻿<Window x:Class="Multas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Sistemas de multa
+        " Height="600" Width="800">
+    <Window.Background>
+        <ImageBrush ImageSource="/Multas;component/Imagens/background.jpg" />
+    </Window.Background>
+    <Grid>
+        <Menu Height="23" HorizontalAlignment="Left" Name="menu1" VerticalAlignment="Top" Width="813">
+            <MenuItem FontWeight="Bold" Header="Motorista   |" >
+                <MenuItem Header="Cadastro" Click="MenuItem_Click"/>
+                <MenuItem Header="Consulta" Click="MenuItem_Click_1"/>
+                <MenuItem Header="Alteração" Click="MenuItem_Click_1"/>
+                <MenuItem Header="Exclusão" Click="MenuItem_Click_1"/>
+            </MenuItem>
+            <MenuItem FontWeight="Bold" Header="Veiculo   |">
+                <MenuItem Header="Cadastro" Click="MenuItem_Click_2"/>
+                <MenuItem Header="Consulta" Click="MenuItem_Click_3"/>
+                <MenuItem Header="Alteração" Click="MenuItem_Click_3"/>
+                <MenuItem Header="Exclusão" Click="MenuItem_Click_3"/>
+            </MenuItem>
+            <MenuItem FontWeight="Bold" Header="Multa" >
+                <MenuItem Header="Cadastro" Click="MenuItem_Click_4"/>
+                <MenuItem Header="Consulta" Click="MenuItem_Click_5"/>
+                <MenuItem Header="Alteração" Click="MenuItem_Click_5"/>
+                <MenuItem Header="Exclusão" Click="MenuItem_Click_5"/>
+            </MenuItem>
+        </Menu>
+        <Label Content="Sistema de Multas" Height="33" Margin="297,70,317,0" Name="lbMain" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" />
+    </Grid>
+</Window>
